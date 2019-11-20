@@ -1,8 +1,9 @@
 let myFont;
+var mySong;
 
 function preload() {
   myFont = loadFont('assets/Montserrat-Bold.otf');
-
+  mySong = loadSound('/assets/punchsound.mp3')
 
 
 }
@@ -17,6 +18,7 @@ function setup() {
     button.style("color", "white")
     button.style("border", "0px")
     button.style("font-size", "28px")
+    button.style("font-family", "Montserrat")
     button.style("padding", "8px")
     button.style("border-radius", "14px")
     button.position(windowWidth/2-50, windowHeight/2-20);
@@ -25,6 +27,7 @@ function setup() {
     button.touchStarted(
       function() {
         window.open('game.html', '_self')
+        mySong.play()
 
   })
 
@@ -44,7 +47,7 @@ function draw() {
   let t = 'HIT THE PUNCHING BAG!'
   textFont(myFont)
   textAlign(CENTER);
-  textSize(30);
+  textSize(21);
   textStyle(BOLD);
   text(s, windowWidth/2, windowHeight/5+70);
   text(t, windowWidth/2, windowHeight/4+70);
