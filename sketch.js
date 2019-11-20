@@ -7,7 +7,7 @@ function preload() {
   punchbag = loadImage('assets/punchbag.png');
   punch = loadImage('assets/punch.png');
   pow = loadImage('assets/pow.png');
-    mySong = loadSound('/assets/punchsound.mp3');
+    // mySong = loadSound('/assets/punchsound.mp3');
 
 
 }
@@ -47,7 +47,7 @@ function setup() {
     }
   }
 
-  
+
 }
 
 
