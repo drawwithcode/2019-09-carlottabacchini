@@ -3,7 +3,7 @@ var mySong;
 
 function preload() {
   myFont = loadFont('assets/Montserrat-Bold.otf');
-  mySong = loadSound('/assets/punchsound.mp3')
+  mySong = loadSound('assets/punchsound.mp3')
 
 
 }
